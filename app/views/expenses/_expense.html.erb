@@ -1,0 +1,32 @@
+<!--<div id="<%#= dom_id expense %>">-->
+<!--  <p>-->
+<!--    <strong>Title:</strong>-->
+    <%#= expense.title %>
+<!--  </p>-->
+
+<!--  <p>-->
+<!--    <strong>Description:</strong>-->
+    <%#= expense.description %>
+<!--  </p>-->
+
+<!--  <p>-->
+<!--    <strong>Amount:</strong>-->
+    <%#= expense.amount %>
+<!--  </p>-->
+  <table class="table">
+    <thead>
+      <tr> Title</tr>
+      <tr> Description</tr>
+      <tr> Amount</tr>
+      <tr> Show</tr>
+      <tr> Edit</tr>
+      <tr> Delete</tr>
+    </thead>
+    <tbody>
+    <tr> <%= expense.title %></tr>
+    <tr> <%= expense.description %></tr>
+    <tr> <%= expense.amount %></tr>
+    </tbody>
+  </table>
+
+</div>
