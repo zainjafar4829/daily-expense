@@ -3,7 +3,7 @@ class ExpensesController < ApplicationController
 
   # GET /expenses or /expenses.json
   def index
-    @expenses = Expense.all
+    @expenses = Expense.paginate(page: params[:page], per_page: 5)
   end
 
   # GET /expenses/1 or /expenses/1.json
